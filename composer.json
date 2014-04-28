@@ -1,0 +1,21 @@
+{
+    "name": "nstory/phpserve",
+    "description": "Library for working with the PHP built-in web server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Story",
+            "email": "nathanielstory@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Nstory\\" : "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+    }
+}
