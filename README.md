@@ -3,10 +3,6 @@
 This is a PHP library for working with the [web server built-in to the PHP
 interpreter](http://www.php.net/manual/en/features.commandline.webserver.php).
 
-## Features
-* Forks the web-server as a separate process
-* Automatically handles clean-up
-
 ## Example
 ```php
 $serve = new Nstory\Serve\Serve;
@@ -26,11 +22,17 @@ echo file_get_contents('http://localhost:8000/README.md');
 $serve->shutdown();
 ```
 
-## Question
-Q: Why would I want to spin-up an instance of the not-suitable-for-production
-built-in web-server?
+## Installation
+_to be written_
 
-A: For automated testing purposes (specifically for integration testing).
+## Features
+* Forks the web-server as a separate process
+* Automatically handles clean-up
+
+## Why?
+Ideas for how this could be used:
+* integration/functional testing -- combine this with SQLite as a database, and BOOM! your app in a test environment -- no external dependencies
+* for serving a site locally during development (similar to `jekyll serve`)
 
 ## To be done
 * Make this work under Windows
