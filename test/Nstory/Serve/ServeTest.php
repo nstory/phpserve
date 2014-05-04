@@ -73,7 +73,12 @@ class ServeTest extends \PHPUnit_Framework_TestCase
 
     private function tmpfile($contents)
     {
-        $tmpfile = tempnam(sys_get_temp_dir(), 'ServeTest');
+        // create .build directory if it doesn't exist
+        $build_dir = PROJECT_BASE_DIR . '/.build';
+        @mkdir($build_dir);
+
+        // create the temp file in .build
+        $tmpfile = tempnam($build_dir, 'ServeTest');
         file_put_contents($tmpfile, $contents);
         return ($this->tmpfile = $tmpfile);
     }
