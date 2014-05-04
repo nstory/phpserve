@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/nstory/phpserve.svg?branch=master)](https://travis-ci.org/nstory/phpserve)
 ## Summary
 This is a PHP library for working with the [web server built-in to the PHP
 interpreter](http://www.php.net/manual/en/features.commandline.webserver.php).
