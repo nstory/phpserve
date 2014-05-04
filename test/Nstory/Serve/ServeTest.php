@@ -52,6 +52,7 @@ class ServeTest extends \PHPUnit_Framework_TestCase
         $this->serve->setRootDirectory($dir_path);
         $this->serve->start();
         $response = file_get_contents('http://127.0.0.1:8000/' . $file_name);
+        var_export($this);
         $this->assertEquals('Hi!', $response);
     }
 
